@@ -1,0 +1,12 @@
+default:
+  suites:
+    default:
+      path: %paths.base%/features
+      contexts: [Behat\MinkExtension\Context\MinkContext,Sensorario\Behat\SensorarioContext]
+  extensions:
+    Behat\MinkExtension:
+      show_cmd: firefox %s
+      base_url: http://sensorario.github.io
+      sessions:
+        default:
+          goutte: ~
