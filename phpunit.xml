@@ -2,7 +2,7 @@
 <phpunit bootstrap="vendor/autoload.php" colors="true">
     <testsuites>
         <testsuite name="Kata tests">
-            <directory>test/unit</directory>
+            <directory>./src/Sensorario/Test</directory>
         </testsuite>
     </testsuites>
 </phpunit>

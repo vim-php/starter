@@ -1,3 +1,3 @@
-# Release 0.2
+# Release 1.0.0
 
- * Implemented git-flow
+ * provided a ready to use tool to do practice in tdd katas
