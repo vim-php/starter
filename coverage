@@ -1,2 +1,2 @@
 #!/bin/bash
-php vendor/bin/phpunit --coverage-html /tmp/report
+php vendor/bin/phpunit -c phpunit.xml --coverage-html /tmp/report
