@@ -4,6 +4,7 @@ namespace Sensorario\Behat;
 
 use Behat\Behat\Context\Context;
 use Behat\Behat\Tester\Exception\PendingException;
+use RuntimeException;
 
 final class SensorarioContext implements Context
 {
@@ -25,9 +26,10 @@ final class SensorarioContext implements Context
     public function containsAuthorDescription($projectName)
     {
         $contens = file_get_contents(__DIR__ . '/../../../composer.json');
-        if (!json_decode($contens)->name == $projectName) {
+        if (json_decode($contens)->name != $projectName) {
             throw new RuntimeException(
-                'Invalid project name'
+                "Failed asserting that " . json_decode($contens)->name .
+                " matches expected $projectName."
             );
         }
     }
