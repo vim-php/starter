@@ -1,3 +1,5 @@
 #!/bin/bash
-php -d display_errors ./vendor/bin/phpunit
-php ./vendor/bin/behat
+
+php -d display_errors ./bin/phpunit
+
+# php -d display_errors ./bin/behat
