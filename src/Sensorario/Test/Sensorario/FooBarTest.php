@@ -2,16 +2,12 @@
 
 namespace Sensorario\Test;
 
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 
-class FooBarTest extends PHPUnit_Framework_TestCase
+class FooBarTest extends TestCase
 {
     public function testTrue()
     {
-        $this->assertEquals(
-            true,
-            1
-        );
+        $this->assertEquals(true, 1);
     }
 }
-
