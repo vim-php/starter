@@ -2,14 +2,14 @@
 <phpunit bootstrap="vendor/autoload.php" colors="true">
 
     <testsuites>
-        <testsuite name="Kata tests">
-            <directory>./src/Sensorario/Test</directory>
+        <testsuite name="new php project">
+            <directory>./tests</directory>
         </testsuite>
     </testsuites>
 
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
-            <directory>./src/Sensorario/Test</directory>
+            <directory>./tests</directory>
         </whitelist>
     </filter>
 
