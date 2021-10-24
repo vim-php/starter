@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+    php:
+        build: ./docker/php
+        ports:
+            - '80:80'
+        volumes:
+            - ./code:/var/www/html/code:delegated
+            - ./docker/vhosts:/etc/apache2/sites-enabled:delegated
+            - ./logs/apache2:/var/log/apache2:delegated

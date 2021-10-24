@@ -16,7 +16,7 @@ class FooBarTest extends TestCase
 
         $logger->setLogFile(
             (new Config())->getRootDir()
-            . '/var/logs/test.log'
+            . '/logs/test.log'
         );
 
         $logger->write('log this content …');
